@@ -24,17 +24,27 @@ ol,
 li {
   margin: 0;
   padding: 0;
+  font-weight: inherit;
 }
 
-a {
-  color: inherit;
-}
-
-button,
-input {
+a,
+button {
   color: currentColor;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 0.875rem;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  -webkit-appearance: none;
+  padding: 0;
+}
+
+a:focus,
+a:focus-visible,
+button:focus,
+button:focus-visible {
+  outline: none;
 }
 
 ul,
