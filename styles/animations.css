@@ -17,7 +17,7 @@
     transform: translateX(0px);
   }
 
-  to{
+  to {
     transform: translateX(4px);
   }
 }
