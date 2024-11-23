@@ -68,7 +68,7 @@
             <img
               loading="lazy"
               src="./images/starting.jpg"
-              class="card__image starting-image"
+              class="card__image filter-double-drop-shadow"
               alt="подготовленное для работы место с мягким стулом и деревянным столом со светлыми ноутбуком и мышкой"
             />
           </picture>
@@ -85,6 +85,7 @@
         <div class="card__button-container">
           <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -130,7 +131,7 @@
             <img
               loading="lazy"
               src="./images/stairs.jpg"
-              class="card__image stairs-image"
+              class="card__image filter-grayscale"
               alt="вид сверху на винтовую белую лестницу из мрамора"
             />
           </picture>
@@ -149,6 +150,7 @@
         <div class="card__button-container">
           <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -194,7 +196,7 @@
             <img
               loading="lazy"
               src="./images/monkey.jpg"
-              class="card__image monkey-image"
+              class="card__image filter-hue-rotate"
               alt="обезьяна сидит за рабочим столом с серьезным видом, держит компьютерную мышь в руках и смотрит в монитор"
             />
           </picture>
@@ -211,6 +213,7 @@
         <div class="card__button-container">
           <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -256,7 +259,7 @@
             <img
               loading="lazy"
               src="./images/neurons.jpg"
-              class="card__image neurons-image"
+              class="card__image filter-brightness"
               alt="очень близко нарисованные пучки нейронных связей"
             />
           </picture>
@@ -275,6 +278,7 @@
         <div class="card__button-container">
           <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -320,7 +324,7 @@
             <img
               loading="lazy"
               src="./images/cool.jpg"
-              class="card__image cool-image"
+              class="card__image filter-saturate"
               alt="знаменитый актер Райан Гослинг в фильме про кукол, одетый в модную одежку, надевает солнцезащитные очки"
             />
           </picture>
@@ -340,6 +344,7 @@
         <div class="card__button-container">
           <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -385,7 +390,7 @@
             <img
               loading="lazy"
               src="./images/computer.jpg"
-              class="card__image computer-image"
+              class="card__image filter-drop-shadow"
               alt="серебрянные наручные часы, лежащие на приоткрытом ноутбуке в темно-неоновом свете"
             />
           </picture>
@@ -402,6 +407,7 @@
         <div class="card__button-container">
           <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -447,7 +453,7 @@
             <img
               loading="lazy"
               src="./images/text.jpg"
-              class="card__image text-image"
+              class="card__image filter-sepia"
               alt="фиолетовая неоновая надпись работай усерднее на английском языке"
             />
           </picture>
@@ -466,6 +472,7 @@
         <div class="card__button-container">
           <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -511,7 +518,7 @@
             <img
               loading="lazy"
               src="./images/city.jpg"
-              class="card__image city-image"
+              class="card__image filter-contrast"
               alt="вид на ночной город в свете небоскребов, неоновых вывесок и больших магазинов"
             />
           </picture>
@@ -534,6 +541,7 @@
         <div class="card__button-container">
           <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               class="like-icon"
               width="39"
               height="36"
@@ -570,33 +578,31 @@
           </button>
         </div>
       </article>
-    </main>
-    <footer class="footer content">
       <button
-        class="button footer__button colored-block"
+        class="button save-button colored-block"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
-        <svg class="floppy-image">
+        <svg class="floppy-image" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-    </footer>
-    <dialog class="dialog colored-block" id="dialog-id">
-      <svg class="floppy-image floppy-window">
-        <use href="./svg/floppy.svg#floppy"></use>
-      </svg>
-      <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
-      <button
-        class="button dialog__button colored-block"
-        type="button"
-        onclick="window['dialog-id'].close()"
-      >
-        <span class="button__text">ок</span>
-      </button>
-    </dialog>
+      <dialog class="dialog colored-block" id="dialog-id">
+        <svg class="floppy-image floppy-window" aria-hidden="true">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <h2 class="dialog__title">Вставьте дискету, чтобы продолжить</h2>
+        <button
+          class="button dialog__button colored-block"
+          type="button"
+          onclick="window['dialog-id'].close()"
+        >
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
